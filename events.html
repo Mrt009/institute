@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<meta name="description" content="">
+<meta name="keywords" content="" />
+<html lang="en">
+
+<head>
+    <meta name="facebook-domain-verification" content="mjtzhhga8h50myz61xikr2xepebfxy" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>        Event
+    </title>
+    <link rel="icon" href="resources/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/frontend/includes/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+
+                }
+
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="resources/css/frontend/frontend.css">
+            <style>
+            #facilities a {
+                font-size: 14px;
+            }
+            .item p {
+                font-size: 18px;
+                line-height: 27px;
+                color: navy;
+            }
+
+            .item h3 {
+                color: maroon;
+                font-size: 26px;
+            }
+
+            .item li {
+                color: navy;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            .box-icon-modern {
+                position: relative;
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                min-height: 300px;
+                padding: 20px;
+                transition: all .3s;
+            }
+
+            .box-icon-modern>* {
+                position: relative;
+            }
+
+            .box-icon-modern .icon-modern {
+                position: relative;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: #ffd8cb;
+            }
+
+            .box-icon-modern .icon-modern svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .box-icon-modern .icon-modern svg>* {
+                color: #151515;
+                fill: #151515;
+            }
+
+            .box-icon-modern .divider:after {
+                background: #ebebeb;
+            }
+
+            .box-icon-modern:before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                background: #ffffff;
+                box-shadow: 0 0 22px rgba(0, 0, 0, 0.1);
+                transition: all .3s;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .box-icon-modern:hover {
+                z-index: 1;
+            }
+
+            .box-icon-modern:hover:before {
+                width: 104%;
+                height: 104%;
+                opacity: 1;
+            }
+
+            #box-icon-modern-id:hover:after {
+                width: auto;
+                height: auto;
+                opacity: 1;
+            }
+
+            @media (min-width: 1200px) {
+                .box-icon-modern {
+                    padding: 40px 32px;
+                }
+            }
+
+            .box-icon-modern.modern-variant-2 .divider {
+                display: none;
+            }
+
+
+
+            *+.box-icon-modern-title {
+                margin-top: 30px;
+            }
+
+            @media (min-width: 992px) {
+                .icon-modern-list>* .box-icon-modern {
+                    border-right: 1px solid #ebebeb;
+                    border-bottom: 1px solid #ebebeb;
+                }
+
+                .icon-modern-list>*:last-child .box-icon-modern,
+                .icon-modern-list>*:nth-child(3) .box-icon-modern {
+                    border-right: 1px solid transparent;
+                }
+
+                .icon-modern-list>*:nth-child(n + 4) .box-icon-modern {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        </style>
+                <link rel="stylesheet" href="resources/css/frontend/common-inner.css">
+    </head>
+
+<body class="window_size">
+    <div class="header" id="myHeader">
+    <div class="row">
+        <div class="col-md-12" style="float:center;">
+            <div class="nav-list11">
+                <ul class="scroll-effect11">
+                    <li class="topnav11" id="myTopnav11">
+                        <div class="dropdown11">
+        <a href="index.html">
+            <button class="dropbtn11">HOME</button>
+        </a>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">ABOUT US <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="vision-mision.html">VISION AND MISSION</a></li>
+                <li><a href="leadership.html">LEADERSHIP</a></li>
+                <li><a href="school-policies.html">SCHOOL POLICIES </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">STUDENTS CORNER <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="houses.html">HOUSES</a></li>
+                <li><a href="council-leader.html">COUNCIL LEADERS</a></li>
+                <li><a href="qbank.html">QUESTION BANK</a></li>
+                <li><a href="exam-portion.html">EXAM PORTIONS</a></li>
+                <li><a href="examtime.html">EXAM TIME TABLE</a></li>
+                <li><a href="class-result.html">CLASS X AND XII RESULTS</a></li>
+                <li><a href="testimonial.html">TESTIMONIALS</a></li>
+                <li><a href="alumni.html">ALUMNI</a></li>
+                <li><a href="transfer-certificate.html">TRANSFER CERTIFICATE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown11">
+        <button class="dropbtn11">EVENTS <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="events.html">SCHOOL ACTIVITIES</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="dropdown11">
+        <button class="dropbtn11">GALLERY <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="photo-gallery.html">PHOTO GALLERY</a></li>
+                <li><a href="video-gallery.html">VIDEO GALLERY</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">CURRICULUM <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="foundational.html">FOUNDATIONAL (CL 1 & 2)</a>
+                <li><a href="prep.html">PREP( CL 3 TO 5TH)</a>
+                <li><a href="middle.html">MIDDLE (CL 6 TO 8TH)</a>
+                <li><a href="secondary.html">SECONDARY (CL 9TH TO 12TH )</a>
+                <li><a href="atal.html">ATAL</a>
+                <li><a href="inclusive-education.html">INCLUSIVE EDUCATION</a>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">ADMISSIONS <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="admission-policies.html">ADMISSION POLICIES</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">INFRASTRUCTURE <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="infra-facility.html">FACILITIES</a></li>
+                <li><a href="infra-resources.html">RESOURCES </a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">TENDER <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="tenders.html">TENDERS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">CAREERS <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="vacancies.html">VACANCIES</a></li>
+            </ul>
+        </div>
+    </div>
+	<!---div class="dropdown11">
+        <a href="https://apsbangalore.edu.in/contactus">
+            <button class="dropbtn11">CONTACT US</button>
+        </a>
+    </div--->
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="dropdown11">
+        <a href="index.html">
+            <button class="dropbtn11">HOME</button>
+        </a>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">ABOUT US <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="vision-mision.html">VISION AND MISSION</a></li>
+                <li><a href="leadership.html">LEADERSHIP</a></li>
+                <li><a href="school-policies.html">SCHOOL POLICIES </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">STUDENTS CORNER <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="houses.html">HOUSES</a></li>
+                <li><a href="council-leader.html">COUNCIL LEADERS</a></li>
+                <li><a href="qbank.html">QUESTION BANK</a></li>
+                <li><a href="exam-portion.html">EXAM PORTIONS</a></li>
+                <li><a href="examtime.html">EXAM TIME TABLE</a></li>
+                <li><a href="class-result.html">CLASS X AND XII RESULTS</a></li>
+                <li><a href="testimonial.html">TESTIMONIALS</a></li>
+                <li><a href="alumni.html">ALUMNI</a></li>
+                <li><a href="transfer-certificate.html">TRANSFER CERTIFICATE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown11">
+        <button class="dropbtn11">EVENTS <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="events.html">SCHOOL ACTIVITIES</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="dropdown11">
+        <button class="dropbtn11">GALLERY <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="photo-gallery.html">PHOTO GALLERY</a></li>
+                <li><a href="video-gallery.html">VIDEO GALLERY</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">CURRICULUM <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="foundational.html">FOUNDATIONAL (CL 1 & 2)</a>
+                <li><a href="prep.html">PREP( CL 3 TO 5TH)</a>
+                <li><a href="middle.html">MIDDLE (CL 6 TO 8TH)</a>
+                <li><a href="secondary.html">SECONDARY (CL 9TH TO 12TH )</a>
+                <li><a href="atal.html">ATAL</a>
+                <li><a href="inclusive-education.html">INCLUSIVE EDUCATION</a>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">ADMISSIONS <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="admission-policies.html">ADMISSION POLICIES</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">INFRASTRUCTURE <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="infra-facility.html">FACILITIES</a></li>
+                <li><a href="infra-resources.html">RESOURCES </a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">TENDER <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="tenders.html">TENDERS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown11">
+        <button class="dropbtn11">CAREERS <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="vacancies.html">VACANCIES</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="dropdown11">
+        <a href="contactus.html">
+            <button class="dropbtn11">CONTACT US</button>
+        </a>
+    </div>
+
+</div>
+    <div class="row normal index_header1" id="top-container" style="display: flex;right: 0px;">
+         <div class="column left" style="">
+           <img class="header-logoss" src="resources/assets/images/aweslogo.png" alt="Header-Logo">
+        </div>
+	
+       <div class="column right">
+            <h1 class="header_para1"><strong>ARMY PUBLIC SCHOOL, K KAMARAJ ROAD BANGALORE - 560042</strong></h1>
+            <h6 class="header_para2">CBSE Affiliation No: 880004 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                School code : 49007</h6>
+            <h6 class="header_para3">We give them wings to fly, they add feathers to our cap</h6>
+        </div>
+		<div class="column left" style="margin-left: -123px;">
+           <img class="header-logoss" src="resources/assets/images/logo.png" alt="Header-Logo">
+        </div>
+    </div>
+
+
+<div class="row" id="top-container-mobile">
+    <div class="col-12 col-sm-12 col-md-12 descrip pr-0">
+        <div id="homeCarousel" class="carousel">
+            <div class="carousel-inner">
+                <div class="item blurred-img active">
+                    <button class="openbtns" onclick="openNav()">☰</button>
+                    <img src="resources/assets/images/home_page/header_image1.jpg" class="img-responsive">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "195px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+</script>
+
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+	
+    
+	<div id="homeCarousel" class="carousel">     
+	<div class="carousel-inner">
+		<div class="item blurred-img active">
+			 			<img src="resources/assets/images/school_banner1.jpg" class="img-responsive" style="width:100%">
+		</div>
+	</div>
+</div>
+
+    <section class="section-page-title" style="background-color:#002e5d; background-size: cover;">
+    <div class="container">
+        <h1 class="page-title" style="color: white;text-align: center;font-size: 30px;padding:10px; text-transform:uppercase;">
+                    Event
+            </h1>
+    </div>
+</section>
+
+    <section id="facilities" class="sec xs-pt-50 xs-pb-40">
+        <div class="col-xs-12 col-md-10 col-md-push-1" style="margin: 0 auto;">
+            <div class="owl-carousel-wrapper xs-mb-30">
+                <div id="facilities-thumb-carousel"
+                    class="owl-carousel owl-theme owl-thumb-gallery-carousel corporate-theme">
+                    <div class="item active"><a>RECENT</a></div>
+                    <div class="item active"><a>ARCHIVE</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-12 col-md-push-1 col-lg-10 col-lg-push-1 xs-pt-20" style="margin: 0 auto;">
+            <div class="owl-carousel owl-theme owl-gallery-carousel facilities-owl-gallery-carousel">
+                <div class="item text-center">
+
+
+                    <section class="section section-lg bg-gray-100 text-center">
+                        <div class="container">
+                            <h2 style="font-size:30px;color:maroon;">Our Events</h2>
+                            <div class="divider-lg"></div>
+                            <br><br>
+                            <div class="row icon-modern-list no-gutters">
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Reaching for the Stars: A Conversation with NASA and ISRO</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/31/original/1701431501-12.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/31/original/1701431464-406392457_200038216486915_2028344816228351419_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">On 29th November 2023, Wing Commander Rakesh Sharma (Retd), the first and only Indian astronaut, and NASA Administrator Bill Nelson, interacted with 40 x students of Army Public School Kamaraj Road Bangalore along with students from other schools at Visvesvaraya Industrial and Technological Museum (VITM), Bangalore under the programme ‘Reaching for the Stars: A Conversation with NASA and ISRO’.
+The Indian astronaut reiterated the need to be mindful of the finite resources of Earth and advocated, “Science with a conscience and Science that will positively impact lives.”
+Mr Nelson spoke about how when he saw the Earth from space, he did not see racial, religious or political divisions, but that we are all in this together. He added that space is a unifying frontier for all countries. He called the current generation the Artemis generation and referred to himself as the Apollo generation. 
+The session will surely motivate the students towards further seeking and exploration.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>INDIAN ARMY QUIZ</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/30/original/1701431323-11.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">To commemorate the splendid Kargil Victory of the Indian Army and to salute the brave heroes of our great nation, AG&#039;s Branch of the Indian Army alongwith Army Welfare Education Society Delhi (AWES) is conducting a Nation wide school quiz competition #BattleofMinds2023.
+The Quarter Finals of the Bangalore chapter of the quiz was held at Basantar Auditorium of MEG &amp; Centre, Bangalore on 20th November 2023. 18 x schools qualified for the round and participated in the competition. Army Public School Kamaraj Road Bangalore was responsible for overall conduct of the event.
+The quiz was conducted over three rounds, each having multiple segments. Top two schools from each round were selected for the semifinals to be held subsequently. Thus a total of six schools were chosen for the semifinals through a closely fought battle of minds !!!
+The audience thoroughly enjoyed the event and there were audience prizes too for correct answers from them.
+Kudos to the winners.
+The full video of the event is available on the following link:
+https://www.youtube.com/live/bbTLmYEimaQ?si=utg8an9WE5nKwFdd</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>RUN FOR UNITY</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/29/original/1701431241-Events&#32;10.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/29/original/1701431242-event&#32;10&#32;-1.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">The &#039;Run for Unity&#039; program is organized every year to commemorate the birthday of the Ironman Sardar Vallabhbhai Patel, so that the young generation of the country understands the importance of the contribution of Sardar Patel towards unification of our Great Nation and takes inspiration from him to convey the message of unity and integrity of India to the public and keep it awake.
+Towards the same mission, a Run for Unity was organised during the special assembly at Army Public School Kamaraj Road Bangalore on 03rd Nov 2023.
+The Principal, Ms K Kavitha flagged of the run. A total of 400x student volunteers from all classes (6th to 12th) ran together across the school campus. The teachers also participated in the run. 
+The frontrunners as well as finishers were felicitated by the Principal at the end of the event.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>CELEBRATION OF SWACHH BHARAT MISSION</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/28/original/1701431140-394289107_177812505376153_7635911774906529451_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/28/original/1701431140-394294805_177812545376149_2373364217143357945_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/28/original/1701431141-394297023_177812415376162_1702667186873883240_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">As part of the celebration of SWACHH BHARAT MISSION, Army Public School Kamaraj Road Bangalore undertook a week long program including workshops, activities and raising awareness on the mission.
+A special assembly was organised and the students took the Swachhta Pledge during the assembly. 
+As a part of &quot;Shramdaan&quot; to raise social awareness, a cleanliness drive was undertaken at SSB South, Bangalore.
+The students also actively participated in cleaning the school garden. All necessary cleaning tools including hygeine material was provided by the School.
+Furthermore, a Workshop on cleanliness, the students of the Eco Club of the school visited the Swach Graha Kalika Kendra. Various environment friendly agricultural and technological projects and initiatives were displayed to the students.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Class 7: My hand, My Vision &amp; strength</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/27/original/1701431084-387801828_173209359169801_7417943712010650122_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">The students of class 7 at Army Public School Kamaraj Road Bangalore participated in a creative and introspective activity that combined artistic expression with goal-setting. The &quot;My hand, My Vision &amp; strength&quot; activity was designed to encourage students to reflect on their aspirations and develop a vision for their future.
+This activity was a success in promoting self-reflection, creativity, and a sense of community among the students. It encouraged them to think about their future and the steps they need to take to achieve their dreams. The handprints with their visions and goals now serve as a daily reminder of their aspirations.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Class 6: Positive affirmation badge</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/26/original/1701430704-391520915_173208999169837_3438903164310919916_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/26/original/1701430704-391715095_173208892503181_3076343924554258752_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">The students of class 6 at Army Public School Kamaraj Road Bangalore undertook a creative and meaningful project to design positive awareness badges. This project aimed to engage the students in an artistic and thought-provoking activity while fostering a sense of positivity and awareness.
+Students gained a better understanding of various awareness themes, such as kindness, mental health, and the environment. This project was a testament to the potential of students to become ambassadors of positive change and awareness. The students will surely carry the values they explored during this project with them into the future, making a positive impact on their communities and the world.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Class 8 : Session on Mental health and Poster designing</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/25/original/1701430620-392744385_173207829169954_9002385026234608494_n.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">A session titled &quot;Mental Health Matters&quot; was conducted for the class 8 students of Army Public School Kamaraj Road Bangalore . The session aimed to raise awareness about the importance of mental health and promote open discussions on this critical topic.
+The students were introduced with the concept of mental health and they were encouraged to think about how their emotions and thoughts play a significant role in their daily lives. Students were made aware that it&#039;s essential to recognize that mental health issues can affect anyone, and there&#039;s no shame in seeking help or support.
+The Session also had interactive discussions, quiz and role reversal where in students enacted as counsellors and gave solutions for various problems faced.
+This session was a significant step toward creating awareness and a safe environment for students to discuss mental health openly. It is hoped that this knowledge will equip the students with the tools to take care of their mental well-being and support their peers. 
+The students of class 8 designed artistic posters, It encouraged self-expression and critical thinking on an important issue, emphasizing that mental health is just as crucial as physical health.
+The posters created during this activity now serve as educational and thought-provoking displays within the school.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>International Day for Disaster Risk Reduction</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/24/original/1701430529-events&#32;5.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">On the occasion of International Day for Disaster Risk Reduction, VITM, Bangalore organised an interactive talk session by Dr YVS Lakshmi from CDoT Bangalore on 13th October 2023. The topic of the talk was &quot;Bridging the Gap - Fighting inequality for a resilient future&quot;.
+40 x Students of Army Public School Kamaraj Road Bangalore attended the talk session and actively participated in the interaction. Detailed discussions were held on various Disaster management initiatives being undertaken by the Government of India. 
+Special emphasis was laid on the communication of alerts to the citizens over available communication channels and obtaining such alerts by integrating various agencies monitoring climatic, geographic or other factors which may cause disaster/ emergency situations.
+Discussions were also held on Emergency Response Support System and various technical and administrative developments being made to build a more prompt and effective disaster management system.
+The students took keen interest and brought up several inquisitive questions which were taken up and discussed during the session.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Hindi play on Mental Health Wellness</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/23/original/1701430441-events&#32;4.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">Students of class 7C Army Public School Kamaraj Road Bangalore enacted a hindi play on mental health wellness today in the School Campus.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>WORKSHOP FOR THE FUTURE SCIENTISTS</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/22/original/1701430311-events&#32;3.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">As India has embarked on its first ever solar mission through Aditya L1, it is intriguing to venture into the tremendous engineering research that was carried out in the background.
+A special workshop on the details of Aditya L1 was organised by VITM, Bangalore on 10th October 2023, as part of the World Space Week Celebration at VITM. 30x Students of Army Public School Kamaraj Road Bangalore attended the event.
+Mr M Srikanth, Mission Director of Aditya L1, ISRO, Bangalore delivered a detailed lecture and presented the various challenges faced during the build up of the mission and the thought provoking solutions which were incorporated to obviate the same. The immersive presentation was intellectually revealing for the students.
+The lecture session was followed by a prize distribution program and 06 x Students of APS Kamaraj Road Bangalore were awarded for their stellar performance in various competitions held during the World Space Week @ VITM.
+The young minds were highly impressed !!!</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Champion from APS KKR</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/21/original/1701429942-Event&#32;2.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">Sejal Gulia, Class X of Army Public School Kamaraj Road Bangalore bags two gold medals in the Karnataka State Fencing Championship.
+We are PROUD !!!!</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Science Sign Bee Workshop</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/20/original/1701429858-event&#32;1.jpg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">International Day of Sign Language was observed on 23/09/2023.The theme for 2023 International Day of Sign languages was &quot;A World Where Deaf People Everywhere Can Sign Anywhere!&quot;. The world will highlight the unity generated by sign languages.
+A team of 14 students (class 6 to  of Army Public School Kamaraj Road Bangalore attended the sign language workshop held at Visvesvariah Industrial and Technical Museum (VITM) on the the eve of world sign language day. The workshop was conducted by Ms.Ruby who visited from the Institute of Speech and Hearing,Mysuru. It aimed at teaching children the basics of Indian Sign language to help provide a basis for a more inclusive society.
+Children learned the importance of using and understanding the sign language. It will not only help them to communicate with hearing and speech impaired people but can help in any new place as it&#039;s a universal language.It was a very informative and interactive session.Students learned the signs to express commonly used 
+expressions and actions.The students also visited the engine hall in the museum. They were excited and amazed by various working models on display ranging from simple machines to aircraft engines.
+Such visits can help students learn beyond their textbooks and generate curiosity in a wide range of areas.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>AWES Command Level Hindi Debate Competition</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/19/original/1696310683-Blank&#32;4&#32;Grids&#32;Collage.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">AWES Command Level Hindi Debate Competition was held on 16.09.2023 at APS K. Kamaraj Bangalore.
+Cluster Level winners under Southern  Command participated in the competition.
+
+The topic of the debate was “Kya Sarkari Sikhan Sansthano ka Nijikaran Kar Dena Chahiye ?”
+
+Team APS Kamaraj Bangalore was declared as Runners-Up. Riyanshu Raj of Class XII of APS Bangalore was adjudged the Best Interjector.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Teachers day Celebration</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/18/original/1693999585-Untitled&#32;design&#32;(5)&#32;(1).png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/18/original/1693999476-Untitled&#32;design&#32;(6)&#32;(1).png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">Teachers form the pillar of the education system and they are the major contributors to the nation building. It is on their teachings that the future of the nation thrives. The Teachers Day was hence celebrated in APS Kamaraj road,  with full reverence in recognition of the stupendous service offered by the educators to the nation. At the one set, the principal and all the school coordinators paid homage to Dr. Sarvapalli Radhakrishnan. The student council conducted a special morning assembly on the occasion and expressed their respect and gratitude to all the teachers. This was followed by the Inter House Dance Competition, in which all the participants took part with full vigor and energy. The dance event was judged by external judges, who were specially invited as the jury members. In the closely contested event, The Vedavathi (Orange) House stood First and the Arkavathi (Red) House was declared as the Runners Up. This was followed by a customary speech by the principal, congratulating the students for putting up an impressive show!! Subsequently, a special fun games session was organized by the school for the teachers. All the teachers wholeheartedly took part in the event and thoroughly enjoyed the same. The principal, Ms. Kavitha K addressed all teachers on the occasion and appreciated the stellar work put forward by them.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>ONAM CELEBRATION</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/17/original/1693569137-apskk5&#32;f.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">***ONAM CELEBRATION Army Public School Kamaraj Road Bangalore ***
+
+The air @ APS Kamaraj was filled with gaiety, fragrance and colour as Onam was celebrated in the school with full fervour on 30th August &#039;23.
+
+The teachers, gracefully dressed in off white attire, skillfully crafted a beautiful Poohkalam, as customary. The Deepam was lighted and its divine rays enlightened the pious mood.
+
+A Special Assembly was arranged in the school and the Principal addressed all on the occasion. The students staged a wonderful dance show on the occasion.</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>AWES Cluster Level Hindi Debate Competition</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/16/original/1693569069-apskk4&#32;f.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">Army Public School Kamaraj Road Bangalore were the Champions of the AWES Cluster Level Hindi Debate Competition held on 19th August 2023 @ APS, Kannur.
+
+Amogh Tripathi of class 10C won the First Prize for Best Speaker For the motion while Pragati Pandya won the First Prize for Best Speaker Against the motion. The entire team of three members including Amogh, Pragati and Riyanshu won the overall best team prize. Needless to say, the team qualified for the next round to be held at the Command Level AWES.
+
+The Principal congratulated the young champs as they brought the Winners Trophy home !!!</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>INVESTITURE CEREMONY</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/15/original/1693568981-apskk3&#32;f.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">As a culmination to the month long electoral process of electing the Student Appointments for the school, the INVESTITURE CEREMONY of Army Public School Kamaraj Road Bangalore was held on 12 August 2023.
+
+Brig MRK Rajesh Panicker,VSM, Dy GOC, K&amp;K Sub Area graced the occasion as the Chief Guest. The Principal, Ms Kavitha K was also present.
+
+The student winners of the elections were bestowed with the respective Student Appointments by the chief guest. Academic Achievers of the school, who excelled in the CBSE board examinations were also felicitated during the occasion.
+
+The valuable words of knowledge and motivation from the Chief Guest and the Principal were keenly heard by the audience.
+
+It was a proud moment for the Students, parents and the teachers !!!</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Inter School Georgian Debate English</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/14/original/1693568873-aps22&#32;f.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/14/original/1693569252-aps21&#32;f.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">The winners of the Inter School Georgian Debate in English held at Rashtriya Military School on 12 August 2023 were felicitated today by the Principal Army Public School Kamaraj Road Bangalore .
+
+It was a huge motivation for the team and they voucher to bring more laurels to the school.
+
+Kudos to the team!!!</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Inter Army Public School competition</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/13/original/1693567480-Untitled&#32;design&#32;4.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        
+                                        </div>
+										<br><br>
+                                            <p style="margin: 0 auto;">Students of Army Public School, K Kamaraj participated in Inter Army Public School competitions held at Rashtriya Military Academy on 16 Aug 2023. There was extempore for students of classes IX and-X in which Ahraan Singh Batth, Aishani Hazarika and Piyush Prabhav participated. Piyush Prabhav won the second prize in this category (a certificate and a cycle from Decathlon). His topic was &quot;How Technology Impacts us in our Daily lives&quot;.
+Krish Cariappa of Class 6A won the second prize (a certificate and Skate shoes) in English Essay writing competition (Category 2)The topic of the Essay was (My Dream School).</p>
+                                        <br><br>
+                                    </div>
+                                    <br><br>
+                                                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="item text-center">
+
+
+                    <section class="section section-lg bg-gray-100 text-center">
+                        <div class="container">
+                            <h2 style="font-size:30px;color:maroon;">Archived  Events</h2>
+                            <div class="divider-lg"></div>
+                            <br><br>
+                            <div class="row icon-modern-list no-gutters">
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>DEBATE ACHIEVERS</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/1/original/1688723144-Picture1.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/1/original/1688723144-Picture2.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/1/original/1688723144-Picture3.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">Our School won 1st Prize in debate competition in senior category and second prize in junior category. 
+Siddharth Acharya of VIII D
+Aniket of Class VIII D 
+Krisha of Class X got 1st position
+Sharanya M , Shreyansh &amp; Prashanth won 2nd place in Junior category  in debate competition organized at The Amaatra Academy on 26/8/2022</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Debate achievers</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/2/original/1688723286-AwardPicImg2&#32;.jpeg'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">It was an honor for the students of APS K Kamaraj to participate in the annual cluster-level English debate 2022, held on 29th August 2022 in Kannur. The Students were awarded the second prize.The runners-up are Anoushka Girish, Karthikeya Athreya and Shuili Chauhan</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>COMMON WEALTH CHAMPIONSHIP, LONDON</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/3/original/1688723353-Picture4.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/3/original/1688723386-Picture5.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">Our student Sejal Gulia &amp; team won 
+Bronze medal at common wealth fencing championship in London.</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>INTERNATIONAL TIGERS DAY</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/4/original/1688723601-Picture6.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">There were several activates arranged such as poster making, face mask making, Slogan writing &amp; signature campaign to spread awareness to conserve wildlife. Students from all classes participated actively on July 22nd 2022.</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Art and Creative Activity</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/5/original/1688724035-Picture9.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/5/original/1688724036-Picture10.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">RANGOLI Competition 13th August 2022</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>National Flags Hand-made by students</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/6/original/1688724143-Picture12.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/6/original/1688724143-Picture13.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;"></p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Art and Creative Activity    IMPRESSIONS in NATURE</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/7/original/1688724251-Picture14.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/7/original/1688724252-Picture15.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">Observation and Reflective Skills, Environmental Understanding, Artistic Impressions , Respect for Nature   Presentation Skills</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>CREATIVE ADVERTISEMENT POSTER MAKING Classes 9, 10</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/8/original/1688724843-Picture16.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/8/original/1688724843-Picture17.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/8/original/1688724844-Picture18.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">Creative Thinking Skills, Collaborative Work Presentation Skills,  Confidence Building Brainstorming Ideas</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>CREATIVE ART ACTIVITY</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/9/original/1688724883-Picture19.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/9/original/1688724884-Picture20.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">Creative Thinking Skills, Collaborative Work Presentation Skills,  Confidence Building Brainstorming Ideas
+Respect and Empathy</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>SANSKRIT SHLOKA RECITATION COMPETITION -    SANSKRIT WEEK CELEBRATIONS THEME “HARDWORK</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/10/original/1688724928-Picture21.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/10/original/1688724928-Picture22.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">Thirteen students participated representing all Houses and it was a successful event 
+Event coordinated by Teacher K. Badrinath, with support from judges, academic coordinators, and officiating Principal</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>Nukkad Natak Street Play presentation</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/11/original/1688724962-Picture23.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/11/original/1688724962-Picture24.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">ANUBHAV Inter school Festival (various events such as poster making, quiz, street play)
+APS Kamaraj secured FIRST Position in Nukkad Natak Street Play presentation.</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                                                                        <div class='col-sm-6 col-lg-12'>
+                                        <h3 class='box-icon-modern-title' style="color: maroon;font-family: serif;">
+                                            <strong>RUN for UNITY to commemorate</strong>
+                                        </h3>
+                                        <div class="row">
+                                                                                            <div class='col-sm-6 col-lg-4'>
+                                                    <article class='box-icon-modern'>
+                                                        <div class='icon-image'>
+                                                            <img src='resources/assets/images/events/12/original/1688725145-Picture25.png'
+                                                                alt='' width='974' height='626'>
+                                                        </div>
+                                                        <div class='divider'></div>
+                                                    </article>
+                                                </div>
+                                                                                        <br><br>
+                                            <p style="margin: 0 auto;">UN for UNITY to commemorate the birth anniversary of Sardar Vallabhbhai Patel, was held  on Thursday, Oct 31st 2022 at  APS K Kamaraj road</p>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    <div class="container-fluid p-0" style="overflow-x : hidden;">
+    <footer>
+        <div class="row">
+
+            <div class="col-md-12 footer">
+
+                <div class="footer-nav">
+
+                    <div class="footer-nav1">
+                        <a href="history.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;About Us</a>
+                        <a href="foundational.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Curriculum</a>
+                        <a href="admission-policies.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Admissions</a>
+                        <a href="vacancies.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Careers</a>
+
+                    </div>
+
+                    <div class="footer-nav2">
+
+                        <a href="events.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Events</a>
+                        <a href="infra-facility.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Infrastructure</a>
+                        <a href="photo-gallery.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Gallery</a>
+                        <a href="tenders.html" rel=""><img src="events.html"
+                                style="max-width:20%;height:auto;transform: rotate(-20deg);">&nbsp;&nbsp;Tender</a>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="footer-locate">
+                    <h2>Locate Us</h2>
+
+
+                    <a href="https://www.google.com/maps/place/Army+Public+School+Bengaluru/@12.9783199,77.6121759,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae168615e326f3:0xfa9b41bbab8b4bc1!8m2!3d12.9783199!4d77.6121759!16s%2Fg%2F1v8g9gbh"
+                        target="_blank">
+                        <img class="location" src="resources/assets/images/home_page/location.jpg"
+                            alt="APS Location"></a>
+                </div>
+
+
+
+                <div class="footer-contact">
+                    <h3>Contact us</h3>
+                    <p style="color: white;">K Kamaraj Road,<br>
+                        Sivanchetti Gardens,<br> Bengaluru,<br> Karnataka 560042
+                    </p>
+                    <div style="float:left" class="contact-details">
+                        <p style="width:max-content;color: white;">E-mail</p>
+                        <p style="width:max-content;color: white;">Phone</p>
+                    </div>
+                    <div style="float:left;margin-left: 3%;" class="contact-details contact-details-2">
+                        <p style="width:max-content;color: white;">: &nbsp;apsbangalore@gmail.com</p>
+                        <p style="width:max-content;color: white;">: 080 25581238</p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12  col-md-12 col-sm-12 col-12 copy-rights">
+                <p>Copyright @ 2023 www.apsbangalore.edu.in| <span data-toggle='modal'
+                        data-target='#Privacy_Policy'>Powered by proton</span> </p>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <div class="modal fade" id="Privacy_Policy" style="padding-top: 77px;z-index:99999999999;" tabindex="-1"
+        role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " id="myModalLabel">Privacy Policy </h4>
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                </div>
+                <div class="modal-body">
+
+                    <div class="disclaimer_body">
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Privacy_Policy" style="padding-top: 77px;z-index:99999999999;" tabindex="-1"
+        role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " id="myModalLabel">Privacy Policy</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                </div>
+                <div class="modal-body">
+
+                </div>
+
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="T_D" style="padding-top: 77px;z-index:99999999999;" tabindex="-1"
+        role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " id="myModalLabel">Terms & Condition</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                </div>
+                <div class="modal-body">
+
+                </div>
+
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ============================================================= -->
+    <!-- Disclaimer Policy-->
+    <!-- ============================================================= -->
+
+
+
+
+    <div class="modal fade" id="disclaimer_body" style="padding-top: 77px;z-index:99999999999;" tabindex="-1"
+        role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " id="myModalLabel">Disclaimer Policy</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                </div>
+                <div class="modal-body">
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+    <script async src="resources/js/frontend/includes/bootstrap.js"></script>
+    <script src="resources/js/frontend/owl.carousel.js"></script>
+    <script src="resources/js/frontend/owl-carousel-custom.js"></script>
+    <script src="resources/js/frontend/script.js"></script>
+
+    <script>
+        document.addEventListener('keydown', event => {
+            if ((event.ctrlKey || event.metaKey) && (event.code == 'KeyS' || event.code == 'KeyC' || event.code ==
+                    'KeyA' || event.code == 'KeyX' || event.code == 'KeyV')) {
+                event.preventDefault();
+                console.log("event declined");
+            }
+        });
+    </script>
+
+    
+</body>
+
+</html>
